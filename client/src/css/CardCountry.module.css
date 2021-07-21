@@ -1,0 +1,23 @@
+.card {
+    
+   
+    display: inline-block;
+    margin-block: 50px;
+    border-style:double;
+    border-color: black;
+    width: 400px;
+    height: 350px;
+    margin-inline: 20px;
+    background-color: rgba(243, 149, 8, 0.57);
+    
+   
+  }
+  .img {
+    border-radius: 5px 5px 0 0;
+    width: 275px;
+    height: 200px;
+    
+  }
+  .container {
+    padding: 2px 16px;
+  }

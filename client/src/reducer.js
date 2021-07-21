@@ -1,10 +1,11 @@
-import {SET_COUNTRIES,SET_COUNTRY,SET_ACTIVITY,POST_ACTIVITY,SET_COUNTRY_ACTIVITY} from "./action"
+import {SET_COUNTRIES,SET_COUNTRY,SET_ACTIVITY,POST_ACTIVITY,SET_COUNTRY_ACTIVITY,SET_PAGES} from "./action"
  
 const inicialState = {
     countries: [],
     country: [],
     activities: [],
     country_activity:[],
+    maxPages:1,
 }
 
 export default function reducer (state = inicialState,action) {
@@ -25,6 +26,10 @@ export default function reducer (state = inicialState,action) {
         case SET_COUNTRY_ACTIVITY: return{
             ...state,
             country_activity:action.payload
+        }
+        case SET_PAGES: return{
+            ...state,
+            maxPages:action.payload
         }
         default : return state
     }

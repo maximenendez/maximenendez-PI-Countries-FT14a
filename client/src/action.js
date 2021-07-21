@@ -3,6 +3,7 @@ export const SET_COUNTRY = "SET_COUNTRY"
 export const SET_ACTIVITY = "SET_ACTIVITY"
 export const POST_ACTIVITY = "POST_ACTIVITY"
 export const SET_COUNTRY_ACTIVITY = "SET_COUNTRY_ACTIVITY"
+export const SET_PAGES = "SET_PAGES"
 
 export function getCountries(){
     return (dispatch) => {
@@ -39,9 +40,7 @@ export function getActivities(){
     }
 }
 export function PostActivities(params,params2){
-    console.log("aca")
-    console.log(params);
-    console.log(params2);
+    
    return(dispatch) =>{ fetch(`http://localhost:3001/activity`,{
         method: "POST",
         headers: {'Content-Type':'application/json'},
@@ -69,3 +68,13 @@ export function getActivitiesCountries(){
         } )
     }
 }
+export function SetPages(response){
+    return(dispatch) => {
+
+            dispatch({
+                type:SET_PAGES,
+                payload:response
+            });
+
+        } 
+    }

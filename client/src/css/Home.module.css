@@ -1,16 +1,44 @@
-.card {
+.fondo{
+    background-image: url("../Globoterraqueo.jpg");
+    background-position: center center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
     
-    width: 25%;
-    display: inline-block;
-    margin-block: auto;
+}
+
+.navBar>label{
+    text-align: center;
+    margin-left: 50px;
+   
+   
+}
+.navBar>div>label{
+    text-align: center;
+    margin-left: 50px;
 
    
+}
+.navBar{
+    background-color: black;
+    color:white;
+    margin-block-end: 10px;
+}
+.search{
+ display: flex;
+}
+.activity{
+    margin-left: 65%;
+}
+select {
+    font-size: 15px;
+    size: 5;
   }
-  img {
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-    
-  }
-  .container {
-    padding: 2px 16px;
-  }
+.pasar{
+    color: white;
+}
+.indice{
+    margin-top: 65px;
+	padding-bottom: 50px;
+}

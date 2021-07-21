@@ -1,0 +1,23 @@
+
+
+.separador{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-top: 40px;
+	
+ 	justify-content: center;
+	 margin-left: 400px;
+	 margin-right: 400px;
+	background-color: rgb(113, 121, 124);
+	
+}
+.formulario{
+	padding-top: 45px;
+	background-image: url("../Globoterraqueo.jpg");
+	
+}
+.volver{
+	margin-top: 65px;
+	margin-block-end: 40px;
+}

@@ -1,0 +1,63 @@
+.card{
+  padding-top: 25px;
+  background-image: url("../Globoterraqueo.jpg");
+}
+  .img {
+    border-radius: 5px 5px 0 0;
+    width: 375px;
+    height: 300px;
+    
+  }
+  .separador1{
+    width: 50%;
+    float: left;
+    height: 350px;
+   
+    
+}
+.separador2{
+    width: 50%;
+    height: 350px;
+    float: right;
+    color: rgba(238, 0, 0, 0.974);
+    font-size: large;
+  
+}
+.actividad{
+  
+  padding-top: 50px;
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+}
+.tabla{
+
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  .tabla tr:nth-child(even){background-color: #f2f2f2;}
+  
+ .tabla:hover {background-color: #ddd;}
+  
+  .tabla th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+.tabla>td{
+  border: 1px solid #ddd;
+  padding: 8px;
+ 
+}
+.tabla>th{
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 100%;
+}
+.volver{
+	margin-top: 65px;
+	margin-block-end: 150px;
+}
