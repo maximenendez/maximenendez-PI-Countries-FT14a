@@ -68,7 +68,7 @@ function handleSubmit1(e){
 console.log(values)
 return(
     <div className={styles.formulario} >
-        <h1>Formulario</h1>
+        <h1>Form</h1>
         <form onSubmit={handleSubmit1}>
         <div className={styles.separador} >
         <label htmlFor="">   Name of Activity:  </label>
@@ -126,7 +126,7 @@ return(
         <input type="submit" value="Submit"  />
         </div>
         </form>
-            { (send == "true") && <h1>Se envio el formulario correctamente</h1>}
+            { (send == "true") && <h1>The form was sent correctly</h1>}
        <Link to={"/home"} > <button className={styles.volver} > Back to Home Page </button></Link> 
     </div>
 )

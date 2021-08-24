@@ -93,7 +93,8 @@ function Countries(params){
         }
         
         
-   
+   console.log("aca aca aca");
+   console.log(paises_filtrados)
     if(paises_filtrados.length > 0)
     return(<div> {
     paises_filtrados.map(country => (

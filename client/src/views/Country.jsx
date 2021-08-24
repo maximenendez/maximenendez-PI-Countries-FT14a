@@ -14,7 +14,7 @@ function Country(){
 
     const country_activity = useSelector((state)=> state.country_activity)
     const activities = useSelector((state) => state.activities );
-
+    var actividades_filtradas = [];
 
 
     useEffect(() => {
@@ -32,11 +32,20 @@ function Country(){
                   if(country.id == country_activity[i].countryId )
                     {   
                         actividades.push(country_activity[i])
-                    
+                        
                }
                 
             }
-            
+            console.log(actividades)
+            for (let i = 0; i < activities.length; i++) {
+                
+                for (let j = 0; j < actividades.length; j++) {
+                    
+                    if(activities[i].id == actividades[j].activityId )
+                    actividades_filtradas.push(activities[i])
+                }
+                
+            }
 
 return (
 
@@ -56,14 +65,14 @@ return (
         </div>
         <div className={styles.actividad}>
         <h1>ACTIVITIES</h1>
-        { actividades.length != 0?  activities.map(activity => 
+        { actividades_filtradas.length != 0?  actividades_filtradas.map(activity => 
            
                 <div  >
                 <table className={styles.tabla}>
                 <tr>
                     <th>Name</th>
                     <th>Difficulty</th>
-                    <th>Duration</th>
+                    <th>Duration weeks</th>
                     <th>Season</th>
                 </tr>
                 <tr>
@@ -74,7 +83,7 @@ return (
                 </tr>
                 </table>
                  </div>
-            ): <h1>No tiene actividades relacionadas</h1> }  
+            ): <h1>Has not related activities</h1> }  
        </div>
 
        <Link to={"/home"} > <button className={styles.volver} > Back to Home Page </button></Link> 

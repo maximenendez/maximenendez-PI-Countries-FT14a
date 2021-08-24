@@ -97,7 +97,7 @@ function Home () {
           { (countries.length > 0) && < Countries option={option} term={Term} pob = {poblation} ord={Ord} act ={Act} pagina= {PagAct}  />    } 
             <h1 className={styles.indice}>
             {(PagAct > 1)&& <button onClick={(e)=> {setPagAct(PagAct-1)}} > Previous </button>}
-               {PagAct}                     
+               {PagAct-1}                     
             {(PagAct < Maxpaginas)&& <button onClick={(e)=> {setPagAct(PagAct+1)}} > Next </button>}
             </h1>
             </div>
